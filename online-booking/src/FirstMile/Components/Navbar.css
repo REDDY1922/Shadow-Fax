@@ -1,0 +1,94 @@
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #f8fafc;
+   padding: 0 10px;
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.logo-container img {
+   width: 2.5rem;
+   height: 2.5rem;
+}
+
+.logo-container h1 {
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+
+.nav-links {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.nav-links a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   padding: 8px 16px;
+   border-radius: 4px;
+   transition: all 0.3s ease;
+   font-weight: 600;
+}
+
+.login-btn button {
+   width: 6rem;
+   height: 2.8rem;
+   padding: 10px;
+   border: 2px solid black;
+   border-radius: 10px;
+   font-size: 0.9rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+   }
+
+   .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+   }
+
+   .nav-links a {
+      padding: 6px 12px;
+   }
+
+   .login-btn {
+      margin-top: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .logo-container h1 {
+      font-size: 1.2rem;
+   }
+
+   .nav-links {
+      gap: 5px;
+   }
+
+   .nav-links a {
+      font-size: 0.9rem;
+      padding: 5px 10px;
+   }
+
+   .login-btn button {
+      width: 5rem;
+      height: 2.5rem;
+      font-size: 0.8rem;
+   }
+}

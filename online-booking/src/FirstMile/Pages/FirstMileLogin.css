@@ -1,0 +1,236 @@
+.login-page {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+   height: 100vh;
+   background-color: #f9fafc;
+}
+
+.login-info {
+   background-color: #12163c;
+   color: white;
+   padding: 40px;
+   border-radius: 12px;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 80vh;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-container h1 {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.left-container p {
+   font-size: 1rem;
+   line-height: 1.6;
+}
+
+.left-container-footer p {
+   font-size: 1rem;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   line-height: 1.6;
+}
+
+.left-container-footer h4 {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+
+.left-container-footer h6 {
+   font-size: 1rem;
+   font-weight: 300;
+   color: #b0b3c5;
+}
+
+.first-mile-login {
+   background-color: white;
+   padding: 40px;
+   border-radius: 12px;
+   width: 35%;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-mile-login h1 {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+   color: #12163c;
+}
+
+.first-mile-login p {
+   font-size: 0.9rem;
+   color: #606070;
+   margin-bottom: 20px;
+}
+
+.firstmile-login-form label {
+   font-size: 0.9rem;
+   font-weight: bold;
+   color: #606070;
+   margin-bottom: 5px;
+   display: block;
+}
+
+.firstmile-login-form input[type="email"],
+.firstmile-login-form input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   background-color: #f9f9f9;
+}
+
+.firstmile-login-form input[type="email"]:focus,
+.firstmile-login-form input[type="password"]:focus {
+   border-color: #12163c;
+   outline: none;
+}
+
+.firstmile-login-form Link {
+   font-size: 0.8rem;
+   color: #12163c;
+   text-decoration: underline;
+   margin-bottom: 20px;
+   display: inline-block;
+}
+
+.firstmile-login-form input[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   font-size: 1rem;
+   background-color: #12163c;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.firstmile-login-form input[type="submit"]:hover {
+   background-color: #0f1236;
+}
+
+.first-mile-login p {
+   text-align: center;
+   margin-top: 10px;
+}
+
+.first-mile-login Link {
+   color: #12163c;
+   font-weight: bold;
+}
+
+.last-mile-login-button {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
+
+.last-mile-login-button {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+}
+
+.last-mile-login-button a {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #12163c;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.last-mile-login-button a:hover {
+   background-color: #0f1236;
+}
+
+form .error-message {
+   color: red;
+   text-align: start;
+}
+
+@media (max-width: 1024px) {
+   .login-page {
+      flex-direction: column;
+      height: auto;
+      padding: 30px 20px;
+   }
+
+   .login-info,
+   .first-mile-login {
+      width: 90%;
+      max-width: 500px;
+      padding: 30px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+
+   .login-info,
+   .first-mile-login {
+      width: 95%;
+      padding: 25px;
+   }
+
+   .firstmile-login-form input[type="email"],
+   .firstmile-login-form input[type="password"],
+   .firstmile-login-form input[type="submit"] {
+      width: 100%;
+   }
+
+   .firstmile-login-form a {
+      font-size: 0.9rem;
+   }
+
+   .last-mile-login-button {
+      position: static;
+      text-align: center;
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .login-page {
+      padding: 15px;
+   }
+
+   .login-info,
+   .first-mile-login {
+      width: 100%;
+      padding: 20px;
+   }
+
+   .firstmile-login-form {
+      width: 100%;
+   }
+
+   .firstmile-firstmile-login-form input[type="email"],
+   .firstmile-firstmile-login-form input[type="password"],
+   .firstmile-firstmile-login-form input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 1rem;
+   }
+
+   .firstmile-firstmile-login-form label {
+      font-size: 1rem;
+   }
+
+   .firstmile-firstmile-login-form a {
+      font-size: 0.85rem;
+   }
+}

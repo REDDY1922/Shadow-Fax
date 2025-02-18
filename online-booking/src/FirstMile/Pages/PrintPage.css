@@ -1,0 +1,100 @@
+.print-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f9f9f9;
+}
+
+/* Print Area (Both LRs) */
+.print-area {
+   width: 14.8cm;
+   /* A5 width */
+   height: 21.3cm;
+   /* A5 height */
+   background: white;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 5px;
+}
+
+/* LR Sheet (Each Receipt) */
+.lr-sheet {
+   width: 100%;
+   height: 10.65cm;
+   /* Each LR gets half of the space */
+   border: 2px solid black;
+   padding: 10px;
+   position: relative;
+}
+
+/* Header */
+.lr-header {
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+/* Details */
+.lr-details {
+   font-size: 14px;
+   color: black;
+}
+
+/* Barcode */
+.barcode {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5px;
+}
+
+/* Footer */
+.lr-footer {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+/* Print Button */
+.print-button {
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   background-color: green;
+   color: white;
+}
+
+/* PRINT SETTINGS */
+@media print {
+   body * {
+      visibility: hidden;
+      /* Hide everything except the print area */
+   }
+
+   .print-area,
+   .print-area * {
+      visibility: visible;
+   }
+
+   .print-area {
+      position: absolute;
+      top: 15%;
+      /* Leave 15% space at the top */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14.8cm;
+      height: 21.3cm;
+      page-break-inside: avoid;
+   }
+
+   .lr-footer {
+      display: none;
+   }
+
+   .barcode {
+      transform: scale(0.6);
+      /* Reduce barcode size */
+   }
+}

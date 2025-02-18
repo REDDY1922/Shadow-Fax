@@ -1,0 +1,63 @@
+.booking-page {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #f9f9f9;
+   padding: 20px;
+   box-sizing: border-box;
+}
+.outer-search-container {
+   width: 70px;
+   height: 70px;
+   background-color: rgb(246, 235, 246);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+.inner-search-container {
+   width: 50px;
+   height:50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(246, 217, 246);
+   border-radius: 50%;
+}
+.search-icon {
+   font-size: 1.6rem;
+   color: #131836;
+}
+
+h2 {
+   font-size: 1.5rem;
+   color: #333;
+}
+
+p {
+   margin-top: 0;
+   font-size: 1rem;
+   color: #555;
+}
+
+.create-booking-link button {
+   background-color: #131836;
+   color: #fff;
+   border: none;
+   padding: 15px 20px;
+   font-size: 1.2rem;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-booking-link button:hover {
+   background-color: #0f1a2e;
+}
+
+.create-booking-link button:focus {
+   outline: 2px solid #4a90e2;
+}

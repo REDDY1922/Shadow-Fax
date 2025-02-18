@@ -1,0 +1,197 @@
+.dashboard-container {
+   max-width: 1200px;
+   margin: 2rem auto;
+   padding: 2rem;
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.dashboard-form {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   margin: 6rem 0;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+}
+
+.search-input {
+   flex: 1;
+   background-color: #eee;
+   min-width: 300px;
+   max-width: 700px;
+   padding: 1rem;
+   border: 2px solid #ccc;
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.3s ease;
+   border-radius: 10px;
+}
+
+.search-input:focus {
+   border: 2px solid #666;
+}
+
+.search-btn {
+   width: 80px;
+   padding: 1rem;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: #131836;
+   color: white;
+   font-size: 1.1rem;
+   border: none;
+}
+
+.pending-orders {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   background-color: #eee;
+   padding: 1rem;
+   border-radius: 10px;
+   margin: 5rem auto;
+   width: fit-content;
+}
+
+.pending-orders h2 {
+   font-size: 1.3rem;
+   font-weight: 400;
+   opacity: 0.7;
+}
+
+.pending-orders a {
+   text-decoration: none;
+   width: 100px;
+   text-align: center;
+   background-color: #131836;
+   color: white;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 18px;
+}
+
+.dashboard-button {
+   margin: 5rem auto;
+   text-align: center;
+}
+
+.dashboard-button a {
+   text-decoration: none;
+   background-color: #131836;
+   padding: 20px;
+   color: white;
+   border-radius: 10px;
+   display: inline-block;
+}
+
+@media (max-width: 1024px) {
+   .dashboard-form {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .search-input {
+      width: 250px;
+   }
+
+   .search-btn {
+      width: 80px;
+   }
+
+   .pending-orders {
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+   }
+
+   .dashboard-button {
+      width: 100%;
+      text-align: center;
+   }
+
+   .dashboard-button a {
+      width: 90%;
+   }
+}
+@media (max-width: 600px) {
+   .dashboard-container {
+      padding: 1rem;
+   }
+
+   .dashboard-form {
+      flex-direction: column;
+      gap: 0.8rem;
+      width: 100%;
+      margin: 3rem 0;
+   }
+
+   .search-input {
+      width: 250px;
+      font-size: 0.9rem;
+      padding: 0.8rem;
+   }
+
+   .search-btn {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.8rem;
+   }
+
+   .pending-orders {
+      width: 100%;
+      padding: 0.8rem;
+   }
+
+   .pending-orders h2 {
+      font-size: 1.2rem;
+   }
+
+   .pending-orders a {
+      width: 100%;
+      font-size: 1rem;
+   }
+
+   .dashboard-button {
+      width: 100%;
+   }
+
+   .dashboard-button a {
+      width: 100%;
+      padding: 15px;
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 375px) {
+   .search-input {
+      font-size: 0.85rem;
+      padding: 0.7rem;
+   }
+
+   .search-btn {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+   }
+
+   .pending-orders {
+      width: 100%;
+   }
+
+   .pending-orders h2 {
+      font-size: 1rem;
+   }
+
+   .pending-orders a {
+      font-size: 0.9rem;
+      padding: 8px;
+   }
+
+   .dashboard-button a {
+      font-size: 0.9rem;
+      padding: 12px;
+   }
+}
