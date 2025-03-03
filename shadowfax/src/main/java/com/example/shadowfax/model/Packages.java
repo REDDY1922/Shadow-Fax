@@ -12,6 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -36,6 +37,9 @@ public class Packages {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "barcode_id", referencedColumnName = "id")
     private BarCode barcode;
+    @ManyToOne
+    @JoinColumn(name = "rider_id", referencedColumnName = "id")
+    private Rider rider;
 
 	public int getId() {
 		return id;
@@ -102,12 +106,25 @@ public class Packages {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
+	
+
+	public Rider getRider() {
+		return rider;
+	}
+
+	public void setRider(Rider rider) {
+		this.rider = rider;
+	}
 
 	@Override
 	public String toString() {
 		return "Packages [id=" + id + ", customerName=" + customerName + ", mobileNumber=" + mobileNumber
 				+ ", productType=" + productType + ", productWeight=" + productWeight + ", date=" + date + ", status="
-				+ status + ", barcode=" + barcode + "]";
+				+ status + ", barcode=" + barcode + ", rider=" + rider + "]";
 	}
+
+	
+
+	
     
 }
