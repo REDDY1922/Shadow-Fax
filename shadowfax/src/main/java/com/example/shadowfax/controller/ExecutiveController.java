@@ -3,6 +3,7 @@ package com.example.shadowfax.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ import com.example.shadowfax.model.Executive;
 import com.example.shadowfax.model.User;
 import com.example.shadowfax.service.ExecutiveService;
 import com.example.shadowfax.service.UserService;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/executive")
 public class ExecutiveController {
