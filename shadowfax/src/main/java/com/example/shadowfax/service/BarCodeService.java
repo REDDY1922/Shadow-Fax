@@ -19,7 +19,7 @@ public class BarCodeService {
 	@Autowired
 	private BarCodeRepository barCodeRepository;
 	public BarCode generateBarcode() {
-        String code = "SGT" + UUID.randomUUID().toString().substring(0, 8);      
+        String code = "HYD" + UUID.randomUUID().toString().substring(0, 5);      
         String imagePath = generateBarcodeImage(code);
         BarCode barcode = new BarCode();
         barcode.setCode(code);

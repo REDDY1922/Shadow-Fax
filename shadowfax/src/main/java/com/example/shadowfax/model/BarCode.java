@@ -18,9 +18,6 @@ public class BarCode {
     private int id;
     private String code;
     private String imagePath;
-	public BarCode() {
-		// TODO Auto-generated constructor stub
-	}
 	public int getId() {
 		return id;
 	}
