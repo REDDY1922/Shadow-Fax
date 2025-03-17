@@ -30,6 +30,7 @@ public class Packages {
     private String mobileNumber;
     private String productType;
     private double productWeight;
+    private String vehicleNumber;
     private LocalDate date;
     @Enumerated(EnumType.STRING)
     private Status status;
@@ -116,12 +117,23 @@ public class Packages {
 		this.rider = rider;
 	}
 
+	public String getVehicleNumber() {
+		return vehicleNumber;
+	}
+
+	public void setVehicleNumber(String vehicleNumber) {
+		this.vehicleNumber = vehicleNumber;
+	}
+
 	@Override
 	public String toString() {
 		return "Packages [id=" + id + ", customerName=" + customerName + ", mobileNumber=" + mobileNumber
-				+ ", productType=" + productType + ", productWeight=" + productWeight + ", date=" + date + ", status="
-				+ status + ", barcode=" + barcode + ", rider=" + rider + "]";
+				+ ", productType=" + productType + ", productWeight=" + productWeight + ", vehicleNumber="
+				+ vehicleNumber + ", date=" + date + ", status=" + status + ", barcode=" + barcode + ", rider=" + rider
+				+ "]";
 	}
+
+	
 
 	
 
